@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/otherprofile_selfintroduction_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip" >
+
+    <cn.hibang.liuzhiwei.view.HandyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="7dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="需求信息"
+        android:textColor="@color/blue"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/blue"
+        android:orientation="vertical" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/devideline" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dip" >
+
+            <cn.hibang.liuzhiwei.view.HandyTextView
+                android:id="@+id/message_friend_htv_interest_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="消息名称"
+                android:textColor="@color/font_attribute"
+                android:textSize="18sp" />
+
+            <cn.hibang.liuzhiwei.view.EmoticonsTextView
+                android:id="@+id/message_friend_htv_interest_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_friend_htv_interest_title"
+                android:text="抢手机"
+                android:textColor="@color/font_value"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/devideline" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dip" >
+
+            <cn.hibang.liuzhiwei.view.HandyTextView
+                android:id="@+id/message_friend_help_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="帮助日期"
+                android:textColor="@color/font_attribute"
+                android:textSize="18sp" />
+
+            <cn.hibang.liuzhiwei.view.EmoticonsTextView
+                   android:id="@+id/message_friend_help_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_friend_help_date"
+                android:text="2014-3-17"
+                android:textColor="@color/font_value"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/devideline" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dip" >
+
+            <cn.hibang.liuzhiwei.view.HandyTextView
+                android:id="@+id/message_friend_help_time_quantum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="帮助时间段"
+                android:textColor="@color/font_attribute"
+                android:textSize="18sp" />
+
+            <cn.hibang.liuzhiwei.view.EmoticonsTextView
+                android:id="@+id/message_friend_help_time_quantum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_friend_help_time_quantum"
+                android:text="12:30~13:30"
+                android:textColor="@color/font_value"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/otherprofile_layout_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/bg_groupparty_desc"
+        android:padding="10dip"
+        android:clickable="true" >
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/otherprofile_layout_feed_pic"
+            android:orientation="vertical" >
+
+            <cn.hibang.liuzhiwei.view.HandyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:text="消息备注"
+                android:textColor="@color/font_attribute"
+                android:textSize="16sp" />
+
+            <cn.hibang.liuzhiwei.view.HandyTextView
+                android:id="@+id/message_friend_remark_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textColor="@color/font_value"
+                android:textSize="16sp"
+                android:text="今天真无聊" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

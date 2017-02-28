@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_normal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/setting_person_info_header"
+        layout="@layout/include_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/portrait_linearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/portrait_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/setting_user_layout_avatar"
+                    android:layout_width="96dip"
+                    android:layout_height="96dip"
+                    android:layout_marginTop="25dip" >
+
+                    <ImageView
+                        android:id="@+id/setting_user_iv_avatar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nearby_people_8" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bglistitem_selector_session_select"
+                        android:duplicateParentState="true"
+                        android:scaleType="fitXY" />
+                </FrameLayout>
+
+                <cn.hibang.liuzhiwei.view.HandyTextView
+                    android:id="@+id/setting_user_htv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dip"
+                    android:layout_marginTop="15dip"
+                    android:singleLine="true"
+                    android:text="田贝"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <cn.hibang.liuzhiwei.view.HandyTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingBottom="7dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="基本信息"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/blue"
+                android:orientation="vertical" >
+            </View>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/bglistitem_selector_user"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dip"
+                        android:focusable="false"
+                        android:gravity="left|center"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/setting_user_layout_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="2dip"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip"
+                            android:paddingTop="2dip" >
+
+                            <ImageView
+                                android:id="@+id/setting_user_iv_gender"
+                                android:layout_width="8dip"
+                                android:layout_height="8dip"
+                                android:scaleType="fitXY" />
+
+                            <cn.hibang.liuzhiwei.view.HandyTextView
+                                android:id="@+id/setting_user_htv_age"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dip"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <cn.hibang.liuzhiwei.view.HandyTextView
+                            android:id="@+id/setting_user_htv_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="四川大学"
+                            android:textColor="@color/font_value"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/user_item_htv_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/font_value"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@color/devideline_listview" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"  >
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/setting_user_info_account1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="嗨帮账号"
+                        android:textColor="@color/font_attribute"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.EmoticonsTextView
+                        android:id="@+id/setting_user_info_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setting_user_info_account1"
+                        android:text="123456789"
+                        android:textColor="@color/font_value"
+                        android:layout_marginTop="5dip"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dip" >
+
+               <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/devideline_listview" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip" >
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/setting_user_info_own_sign1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="个性签名"
+                        android:textColor="@color/font_attribute"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.EmoticonsTextView
+                        android:id="@+id/setting_user_info_own_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setting_user_info_own_sign1"
+                        android:text="巴拉巴拉巴拉巴拉巴拉"
+                        android:textColor="@color/font_value"
+                        android:layout_marginTop="5dip"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"  >
+
+                <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/devideline_listview" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip" >
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/setting_user_info_mail1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="邮箱"
+                        android:textColor="@color/font_attribute"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.EmoticonsTextView
+                        android:id="@+id/setting_user_info_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setting_user_info_mail1"
+                        android:text="liuzhiwei@163.com"
+                        android:textColor="@color/font_value"
+                        android:layout_marginTop="5dip"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"  >
+
+                <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/devideline_listview" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"  >
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/setting_user_info_phonenum1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="电话"
+                        android:textColor="@color/font_attribute"
+                        android:layout_marginTop="5dip"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.EmoticonsTextView
+                        android:id="@+id/setting_user_info_phonenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setting_user_info_phonenum1"
+                        android:text="12345678901"
+                        android:textColor="@color/font_value"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dip" >
+
+               <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/devideline_listview" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/setting_user_info_edit_btn"
+                style="@style/Style_Dialog_Button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/btn_default_popsubmit"
+                android:text="编辑资料" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

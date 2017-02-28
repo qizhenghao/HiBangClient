@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_publish_layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_backgroud_full"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="60dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popwindow"
+         >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                >
+
+                <cn.hibang.liuzhiwei.view.HandyTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:text="选择好友状态"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" 
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/blue"
+                    android:orientation="vertical" />
+                
+                <Button 
+                    android:id="@+id/button_tradding"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dip"
+                    android:background="@drawable/btn_default_popsubmit"
+                    android:gravity="center"
+                    android:textColor="@color/btn_text_color"
+                    android:textSize="14sp"
+                    android:text="正在交易"
+                    android:layout_marginTop="8dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    />
+                <Button 
+                    android:id="@+id/button_traded"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dip"
+                    android:background="@drawable/btn_default_popsubmit"
+                    android:gravity="center"
+                    android:textColor="@color/btn_text_color"
+                    android:textSize="14sp"
+                    android:text="交易完成"
+                    android:layout_marginTop="8dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    />
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

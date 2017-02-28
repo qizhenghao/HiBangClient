@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="200dip"
+                android:src="@drawable/pic_about_logo" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:id="@+id/about_htv_versionname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/about_btn_abouthibang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@drawable/btn_default"
+                    android:text="关于嗨帮"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/about_btn_help"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/btn_default"
+                    android:text="用户帮助"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/about_btn_checkforupdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/btn_default"
+                    android:text="检查更新"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/about_btn_version"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/btn_default"
+                    android:text="版本介绍"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/about_btn_userprotocol"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/btn_default"
+                    android:text="用户协议"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="Copyright © 2014 HiBang TECH All Rights Reserved"
+                    android:textColor="@color/text_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_publish_layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_backgroud_full"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="70dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popwindow"
+        android:padding="20dip" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <cn.hibang.liuzhiwei.view.HandyTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:gravity="center_horizontal"
+                    android:text="发布需求"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:background="@color/blue"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:gravity="center_vertical"
+                        android:text="求    助："
+                        android:textColor="@color/menu_text"
+                        android:textSize="16sp" />
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/publish_help_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="求妹子上自习"
+                        android:textColor="@color/menu_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:orientation="horizontal" >
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="10dip"
+                        android:gravity="center_vertical"
+                        android:text="日    期："
+                        android:textColor="@color/menu_text"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/dialog_publish_rg_day"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/dialog_publish_rb_today"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_tab_left"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minHeight="33dip"
+                            android:text="今天"
+                            android:textColor="@color/btn_text_color"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/dialog_publish_rb_tomorrow"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_tab_center"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minHeight="33dip"
+                            android:text="明天"
+                            android:textColor="@color/btn_text_color"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/dialog_publish_rb_tomorrow2"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_tab_right"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minHeight="33dip"
+                            android:text="后天"
+                            android:textColor="@color/btn_text_color"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:orientation="horizontal" >
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dip"
+                        android:gravity="center_vertical"
+                        android:text="开始时间：    "
+                        android:textColor="@color/menu_text"
+                        android:textSize="16sp" />
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/publish_start_time_hour"
+                        android:layout_width="50dip"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/edittext_default"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="12"
+                        android:textColor="@color/font_value"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="时"
+                        android:textColor="@color/font_value"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/publish_start_time_minute"
+                        android:layout_width="50dip"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/edittext_default"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="30"
+                        android:textColor="@color/font_value"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:textColor="@color/font_value"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:orientation="horizontal" >
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dip"
+                        android:gravity="center_vertical"
+                        android:text="结束时间：    "
+                        android:textColor="@color/menu_text"
+                        android:textSize="16sp" />
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/publish_end_time_hour"
+                        android:layout_width="50dip"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/edittext_default"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="23"
+                        android:textColor="@color/font_value"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="时"
+                        android:textColor="@color/font_value"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:id="@+id/publish_end_time_minute"
+                        android:layout_width="50dip"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/edittext_default"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="30"
+                        android:textColor="@color/font_value"
+                        android:textSize="18sp" />
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:textColor="@color/font_value"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pop_pub_details_linearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dip"
+                    android:layout_marginTop="6dip"
+                    android:orientation="horizontal" >
+
+                    <cn.hibang.liuzhiwei.view.HandyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dip"
+                        android:text="详细描述："
+                        android:textColor="@color/menu_text"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/pubish_ps_textview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:background="@drawable/edittext_default"
+                        android:hint="输入您的备注"
+                        android:maxLength="120"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/blue"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/dialog_publish_btn_submit"
+                        style="@style/Style_Dialog_Button"
+                        android:layout_width="0dip"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_default_popsubmit"
+                        android:text="确认" />
+
+                    <Button
+                        android:id="@+id/dialog_publish_btn_cancel"
+                        style="@style/Style_Dialog_Button"
+                        android:layout_width="0dip"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_default"
+                        android:text="取消" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

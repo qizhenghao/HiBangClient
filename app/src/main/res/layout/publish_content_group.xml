@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bglistitem_selector_user"
+    android:gravity="center_vertical"
+    android:padding="5dp" >
+
+    <ImageView 
+        android:id="@+id/publish_group_title_icon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/publish_love_icon"
+        />
+
+    <ImageView
+        android:id="@+id/publish_group_image"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user_setting_item_arrow" />
+    
+     <TextView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="精品推荐" 
+        android:textColor="#000"
+        android:layout_toRightOf="@id/publish_group_title_icon"
+        android:layout_marginLeft="15dip"
+        />
+
+</RelativeLayout>

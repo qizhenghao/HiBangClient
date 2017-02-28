@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_normal">
+    
+        
+       <include
+        android:id="@+id/register_info_header"
+        layout="@layout/include_header" />
+       
+       <ScrollView 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="0.47"
+           android:scrollbars="vertical">
+           
+           <LinearLayout 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="12dip"
+               >
+               
+    
+           <cn.hibang.liuzhiwei.view.HandyTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="完善个人资料"
+                android:textColor="@color/font_value"
+                android:gravity="center_horizontal"
+                android:textSize="22dip" />
+           
+           
+             
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dip" >
+
+                <ImageView
+                    android:id="@+id/register_photo_iv_userphoto"
+                    android:layout_width="120dip"
+                    android:layout_height="120dip"
+                    android:layout_marginRight="12dip"
+                    android:background="@drawable/bg_reg_userhead"
+                    android:padding="6dip"
+                    android:src="@drawable/ic_common_def_header" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/register_photo_layout_selectphoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="3dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_default"
+                        android:gravity="center"
+                        android:orientation="horizontal" 
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_reg_album" />
+
+                        <cn.hibang.liuzhiwei.view.HandyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0.5dip"
+                            android:layout_weight="1.0"
+                            android:text="相册选取"
+                            android:textColor="@color/font_value" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/register_photo_layout_takepicture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_default"
+                        android:gravity="center"
+                        android:orientation="horizontal" 
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/ic_reg_camera" />
+                <cn.hibang.liuzhiwei.view.HandyTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="0.5dip"
+                   android:layout_weight="1"
+                   android:text="现在拍摄"
+                   android:textColor="@color/font_value" />
+                        
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <cn.hibang.liuzhiwei.view.HandyTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="12dip"
+                android:gravity="center"
+                android:text="上传真实的头像，拉近真实的距离。"
+                android:textColor="@color/font_value"
+                android:textSize="14sp" />
+        </LinearLayout>
+           
+            
+
+                        
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="13dip"
+                android:paddingRight="13dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+                <cn.hibang.liuzhiwei.view.HandyTextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/edittext_default"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="姓名"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"  
+                    />
+                <EditText
+                    android:id="@+id/register_info_new_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edittext_default"
+                    android:hint="输入新的姓名"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="16"
+                    android:singleLine="true" 
+                    android:textColor="@color/font_value"/>
+            </LinearLayout>
+            
+                   <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="13dip"
+                android:paddingRight="13dip"
+                android:layout_marginTop="15dip"
+                android:orientation="horizontal" >
+            
+          <cn.hibang.liuzhiwei.view.HandyTextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/edittext_default"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="性别"
+                     android:textColor="@color/blue"
+                    android:textSize="18sp"  
+                    />
+
+                
+                <RadioGroup
+                    android:id="@+id/register_user_info_gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/register_user_info_male"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_left"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="男"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/register_user_info_female"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="女"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+                </RadioGroup>
+                
+
+            </LinearLayout>
+            
+                  
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:focusable="true"
+                android:paddingLeft="13dip"
+                android:paddingRight="13dip"
+                android:layout_marginTop="15dip"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+                <cn.hibang.liuzhiwei.view.HandyTextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/edittext_default"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="年龄"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp" 
+          
+                    />
+                <EditText
+                    android:id="@+id/register_info_new_age"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edittext_default"
+                    android:hint="请输入您的年龄"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/font_value" />
+            </LinearLayout>
+            
+                   
+                              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:paddingLeft="13dip"
+                android:paddingRight="13dip"
+                android:layout_gravity="center_vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" 
+                android:paddingBottom="28dip">
+                <cn.hibang.liuzhiwei.view.HandyTextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/edittext_default"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="学校"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"  
+                    />
+
+             <RelativeLayout 
+                 android:id="@+id/register_school_layout_item"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/edittext_default"
+                 android:clickable="true"
+                >
+                
+                   <cn.hibang.liuzhiwei.view.HandyTextView
+                    android:id="@+id/register_school_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"       
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="点击选择学校"
+                    android:textColor="@color/font_value"
+                    android:textSize="18sp"  
+                    />
+                   
+                  <ImageView
+                     android:id="@+id/school_item_icon"
+                     android:layout_width="16dip"
+                     android:layout_height="16dip"
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"
+                     android:scaleType="fitCenter"
+                     android:src="@drawable/arrow" />
+                 
+                  </RelativeLayout>
+                  
+                
+            </LinearLayout>
+            
+            
+                   
+           </LinearLayout>
+           
+       </ScrollView>
+       
+           <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_unlogin_bar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="4dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="4dip" >
+
+            <Button
+                android:id="@+id/reg_info_btn_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="42dip"
+                android:layout_marginRight="9dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bottombar"
+                android:gravity="center"
+                android:text="上一步"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/reg_info_btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="42dip"
+                android:layout_marginLeft="9dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bottombar"
+                android:gravity="center"
+                android:text="完成注册"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    
+
+</LinearLayout>

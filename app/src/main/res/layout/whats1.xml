@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@drawable/w01" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  >
+    
+    <TextView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:gravity="center" 
+        android:paddingLeft="170sp"
+        android:paddingRight="10sp"
+        android:textColor="@color/text_color_blue"
+        android:text="\nC语言不会写？\n你的电脑坏了？\n找人领快递?\n找人三国杀?\nppt总做不好？\n午饭懒得买？\n想打台球找不到伙伴？\n想拥有一群志同道合的小伙伴？" 
+        android:layout_alignParentTop="true"
+        android:textSize="14sp"
+        />
+</RelativeLayout>

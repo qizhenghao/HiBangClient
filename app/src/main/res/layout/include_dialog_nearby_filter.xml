@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_nearby_layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_backgroud_full"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="70dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popwindow"
+        android:padding="20dip" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <cn.hibang.liuzhiwei.view.HandyTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:gravity="center"
+                    android:text="您想看到的需求"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/blue"
+                    android:orientation="vertical" />
+
+                <RadioGroup
+                    android:id="@+id/dialog_nearby_rg_gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:layout_marginTop="10dip">
+
+                    <RadioButton
+                        android:id="@+id/dialog_nearby_rb_gender_all"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_left"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="全部"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/dialog_nearby_rb_gender_male"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_center"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="生活"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" 
+                        />
+
+                    <RadioButton
+                        android:id="@+id/dialog_nearby_rb_gender_female"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="学习"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+                    <RadioButton
+                        android:id="@+id/select_class_work"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="工作"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+                
+
+                <RadioGroup
+                    android:id="@+id/dialog_nearby_rg_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/dialog_nearby_rb_time_fifteenminutes"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_left"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="娱乐"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/dialog_nearby_rb_time_sixtyminutes"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_center"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="购物"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/dialog_nearby_rb_time_oneday"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_center"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="情感"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/dialog_nearby_rb_time_twoday"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tab_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="33dip"
+                        android:text="运动"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/blue"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/dialog_nearby_btn_submit"
+                        style="@style/Style_Dialog_Button"
+                        android:layout_width="0dip"
+                        android:layout_height="36dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_default_popsubmit"
+                        android:text="确认" />
+
+                    <Button
+                        android:id="@+id/dialog_nearby_btn_cancel"
+                        style="@style/Style_Dialog_Button"
+                        android:layout_width="0dip"
+                        android:layout_height="36dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_default"
+                        android:text="取消" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

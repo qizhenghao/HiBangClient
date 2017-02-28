@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newhaibang"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="cn.hibang.bruce.control.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity android:name="cn.hibang.wpy.view.AppStart">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name="cn.hibang.wpy.view.Whatsnew"></activity>
+        <activity android:name="cn.hibang.wpy.view.WhatsnewDoor"></activity>
+        <activity
+            android:name="cn.hibang.liaohongxian.activity.Welcome"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liaohongxian.activity.WelcomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.maintabs.MainTabActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.maintabs.RecommendActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.maintabs.UserSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.maintabs.MessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.maintabs.PublishActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.maintabs.FriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.message.ChatActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.maintabs.InformationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.maintabs.InfoReviewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.setting.PersonInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.setting.EditInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.message.ChatFriendInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.setting.EditProvinceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.register.RegProvinceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.register.RegSchoolActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.setting.EditSchoolActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liaohongxian.activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liaohongxian.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liaohongxian.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.register.RegisterIdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.hibang.liuzhiwei.register.RegisterInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.elife.ehelp.view.DialogActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        
+        <service
+            android:name="cn.hibang.bruce.service.NettyService">
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+        
+        <ImageView
+            android:id="@+id/imageLeft"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"            
+            android:src="@drawable/w_lift" />
+        
+        <ImageView
+            android:id="@+id/imageRight"
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"            
+            android:src="@drawable/w_right" />
+        <TextView 
+            android:id="@+id/anim_text"
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content" 
+        	android:gravity="center" 
+        	android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+        	android:text=" \n \n嗨帮V1.0\n带你打开互助之门 \n "         	
+        	android:textSize="30sp"
+        	android:textColor="@color/text_color_blue"
+        />
+
+    </RelativeLayout>

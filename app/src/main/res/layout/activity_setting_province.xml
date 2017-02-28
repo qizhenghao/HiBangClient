@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_normal"
+    android:orientation="vertical" >
+    
+        <include
+        android:id="@+id/province_header"
+        layout="@layout/include_header" />
+    
+    
+      <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <cn.hibang.liuzhiwei.view.CircleListView
+                android:id="@+id/lv_province_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_default_round"
+                android:cacheColorHint="#00000000" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    
+    
+
+</LinearLayout>
+
